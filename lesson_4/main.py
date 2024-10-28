@@ -1,6 +1,3 @@
-from collections import Counter
-
-# ================
 # Homework 4.1
 list_1 = ['bo', 'chau', 'duo']
 list_2 = ['fo', 'global', 'red hat']
@@ -18,7 +15,7 @@ print(list_1, list_2, '===============================', sep='\n')
 list_1.extend(list_2)
 print(list_1)
 
-#Homework 2
+#Homework 4.2
 #===========================
 zen_of_python = '''The Zen of Python, by Tim Peters
 
