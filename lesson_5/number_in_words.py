@@ -28,7 +28,7 @@ def number_to_rub(num):  # функция перевода цифры в РУБ�
         return word
     if 100 <= num < 1000:
         if 0 <= num % 100 <= 19:
-            return hundredths[num // 100] + ' ' + zero_to_nineteen[num]
+            return hundredths[num // 100] + ' ' + zero_to_nineteen[num % 100]
         elif 20 <= num % 100 < 100:
             if num % 10 == 0:
                 return hundredths[num // 100] + ' ' + tens[num // 10 % 10]
