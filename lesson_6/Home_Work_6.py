@@ -21,7 +21,7 @@ def count_char(STR_VAL):
             cache_dict[i] = 1
     return cache_dict
 
-print(count_char(input('input your phraze: ').lower()))
+print(count_char(input('\n\ninput your phraze: ').lower()), '\n\n')
 
 
 
@@ -72,9 +72,4 @@ beef()
 def chicken():
     print('|||КУРА|||')
 
-
 chicken()
-
-
-
-
