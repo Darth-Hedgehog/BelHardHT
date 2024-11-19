@@ -21,12 +21,14 @@ def check_login(login: str):
 print(check_login(input('Input your password: ')))
 
 def check_phone(phone):
-    only_digit = phone[5:7]+phone[8:11]+phone[12:14]+phone[15:]
+    only_digit = phone[8:11]+phone[12:14]+phone[15:]
+    operator_code = ['(29)', '(33)', '(44)', '(25)']
 
-    if len(phone) == 17 and phone[:5] == '+375(' and only_digit.isdigit() and phone[7] == ')':
+    if (len(phone) == 17 and phone[:4] == '+375' and only_digit.isdigit() and
+            phone[4:8] in operator_code):
         return 'YES'
     else:
         return 'NO'
 
 print(check_phone(input('Введите номер телефона в формате +375(__)___-__-__: ')))
-# +375(66)666-66-66
+# +375(33)666-66-66
