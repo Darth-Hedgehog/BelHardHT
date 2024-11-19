@@ -25,10 +25,10 @@ def check_phone(phone):
     operator_code = ['(29)', '(33)', '(44)', '(25)']
 
     if (len(phone) == 17 and phone[:4] == '+375' and only_digit.isdigit() and
-            phone[4:8] in operator_code):
-        return 'YES'
+            phone[4:8] in operator_code) and phone[11] == phone[14] == '-':
+        return 'Good number format'
     else:
-        return 'NO'
+        return 'Number format error'
 
 print(check_phone(input('Введите номер телефона в формате +375(__)___-__-__: ')))
 # +375(33)666-66-66
