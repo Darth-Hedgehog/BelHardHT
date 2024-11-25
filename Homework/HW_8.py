@@ -1,7 +1,8 @@
 from abc import abstractmethod
 
 
-class Transport():
+class Transport:
+
     mileage: int = 0
     def __init__(self, brand: str, model: str, issue_year: str, color: str):
         self.brand = brand
