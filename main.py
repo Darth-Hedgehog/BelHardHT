@@ -1,2 +1,2 @@
 # new comment
-print("Git it's hard")
+print("Git it's not hard")
