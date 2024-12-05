@@ -1,32 +1,58 @@
 [{
     "id": 0,
+    "name": "Susanne",
+    "age": 24,
+    "interests": [
+        "Codding",
+        "Lerning_English",
+        "Eating"
+    ],
+    "salary": 300.0
+},
+{
+    "id": 1,
     "name": "Anna",
-    "age": 26,
+    "age": 25,
     "interests": [
         "Sex",
         "Drugs",
         "Rock-n-Roll"
     ],
-    "salary": 700.0
-},
-{
-    "id": 1,
-    "name": "Svetlana",
-    "age": 31,
-    "interests": [
-        "Child",
-        "life"
-    ],
-    "salary": 800.0
+    "salary": 650.0
 },
 {
     "id": 2,
-    "name": "Olga",
+    "name": "Olya",
     "age": 36,
     "interests": [
-        "Dogs",
+        "Work",
+        "Dog",
         "Sport",
-        "Work"
+        "Eating",
+        "Drink"
     ],
     "salary": 400.0
+},
+{
+    "id": 3,
+    "name": "Sauron",
+    "age": 2167,
+    "interests": [
+        "Kill_they_all",
+        "Ring",
+        "Power",
+        "Destroy_the_world"
+    ],
+    "salary": 2000000.0
+},
+{
+    "id": 4,
+    "name": "Myaola",
+    "age": 33,
+    "interests": [
+        "Ressurections",
+        "Cleric",
+        "God_is_the_Ra!"
+    ],
+    "salary": 800.0
 }]

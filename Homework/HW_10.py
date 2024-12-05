@@ -2,12 +2,17 @@ import json
 from typing import Optional
 from pydantic import BaseModel
 
-class User(BaseModel):
+
+class UserSelect(BaseModel):
     id: int
-    name: str
+    name :str
+
+
+class User(UserSelect):
     age: int
     interests: Optional[list] = None #не обязательное поле может быть null,
     salary: float
+
 
 def user(id):
     users = {
@@ -25,7 +30,6 @@ def add_object():
         for i in range(num):
             if i == 0:
                 file.write('[')
-
             json.dump(user(i), file, indent=4)
             if i<num-1:
                 file.write(',\n')
@@ -41,6 +45,7 @@ def give_all_object():
             valid_user = User(**d)
             print(valid_user)
 
+
 def give_some_object():
     with open('users.json', 'r+') as file:
         some_object = input('Who do you want to see?(input name): ')
@@ -48,16 +53,21 @@ def give_some_object():
         for d in data:
             if d['name'] == some_object:
                 valid_user = User(**d)
-                print(valid_user)
+                return valid_user
 
-def give_id_name_object():
+
+def give_all_id_name_object():
     with open('users.json', 'r+') as file:
         data = json.load(file)
+        user_list = list()
         for d in data:
-            print(f' id:_{d["id"]}____NAME:{d["name"]}')
+            user_list.append(UserSelect(**d))
+        return user_list
 
-# add_object()
-give_all_object()
-give_id_name_object()
-give_some_object()
+
+
+#add_object()
+# give_all_object()
+print(*give_all_id_name_object(), sep='\n')
+print(give_some_object())
 
