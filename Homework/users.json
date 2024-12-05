@@ -1,0 +1,32 @@
+[{
+    "id": 0,
+    "name": "Anna",
+    "age": 26,
+    "interests": [
+        "Sex",
+        "Drugs",
+        "Rock-n-Roll"
+    ],
+    "salary": 700.0
+},
+{
+    "id": 1,
+    "name": "Svetlana",
+    "age": 31,
+    "interests": [
+        "Child",
+        "life"
+    ],
+    "salary": 800.0
+},
+{
+    "id": 2,
+    "name": "Olga",
+    "age": 36,
+    "interests": [
+        "Dogs",
+        "Sport",
+        "Work"
+    ],
+    "salary": 400.0
+}]
